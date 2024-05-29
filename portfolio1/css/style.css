@@ -1,0 +1,297 @@
+@font-face {
+    font-family: franklin;
+    src: url(../fonts/LibreFranklin-VariableFont_wght.ttf);
+}
+
+:root {
+    --color-purple: #7477FF;
+    --color-darkest: #18181B;
+    --color-dark: #2B2B2E;
+    --color-mid: #617390;
+    --color-light: #D2DAE7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: franklin;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--color-darkest);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--color-purple);
+    border-radius: 32px;
+}
+
+nav,
+.box {
+    background-color: var(--color-darkest);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+}
+
+h1 {
+    font-size: 2em;
+    font-variant: small-caps;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1em;
+    transition: .2s;
+}
+
+h1,
+a {
+    color: var(--color-light);
+}
+
+a:hover {
+
+    color: var(--color-purple);
+}
+
+.logo {
+    color: var(--color-purple);
+}
+
+.box {
+    height: 100vh;
+    width: 100%;
+    color: var(--color-light);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2em;
+}
+
+.texto-hero {
+    color: var(--color-light);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.hero img {
+    width: 80%;
+    border-radius: 50%;
+
+}
+
+.key-words {
+    color: var(--color-purple);
+}
+
+.titulos {
+    font-size: 2em;
+    text-align: center;
+}
+
+.container-abtme {
+    height: 80%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container-abtme img {
+    width: 70%;
+    border-radius: 32px;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.projetos a:hover {
+    text-decoration: underline var(--color-purple);
+}
+
+.container-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+
+}
+
+.container-projetos img {
+    width: 50%;
+    padding: 1em;
+    border-radius: 32px;
+}
+
+.media{
+    display: flex;
+    font-size: 4em;
+    padding-top: 2em;
+    gap: 2em;
+    flex-direction: column;
+    align-items: center;
+    
+}
+i{
+    color: var(--color-purple);
+    transition: scale .3s;
+}
+i:hover{
+    scale: 1.2;
+}
+
+@media (min-width: 480px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    ul {
+        font-size: 1.3em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1.5em;
+    }
+
+    .titulos {
+        font-size: 3em;
+    }
+
+    .container-abtme {
+        justify-content: space-between;
+    }
+
+    .container-abtme p {
+        font-size: 1.3em;
+    }
+
+    .projetos p {
+        font-size: 1.3em;
+    }
+    .contato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .media{
+        flex-direction: row;
+        gap: 1em;
+
+    }
+}
+
+@media (min-width: 768px) {
+    nav {
+        padding: 2em;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    ul {
+        font-size: 1.5em;
+    }
+
+    .hero img {
+        width: 60%;
+    }
+
+    .container-abtme img {
+        width: 60%;
+    }
+
+    .container-projetos img {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1{
+        font-size: 4em;
+    }
+    ul{
+        font-size: 2em;
+    }
+    .hero img{
+        width: 40%;
+    }
+    .container-abtme img{
+        width: 45%;
+    }
+    .container-projetos img{
+        width: 35%;
+    }
+    .projetos p{
+        font-size: 2em;
+    } 
+    .media{
+        font-size: 6em;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    nav{
+        padding: 2em 5em;
+    }
+    .hero{
+        flex-direction: row;
+        padding: 4em;
+    }
+    .container-abtme{
+        background-color: var(--color-dark);
+        border-radius: 50px;
+        flex-direction: row;
+        width: 80%;
+        height: fit-content;
+        margin: 10em auto;
+    }
+    .container-abtme img{
+        border-radius: 50%;
+    }
+    .container-projetos img{
+        width: 20%;
+    }
+    .contato h3{
+        font-size: 4em;
+    }
+}
