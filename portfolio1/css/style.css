@@ -156,20 +156,22 @@ a:hover {
     border-radius: 32px;
 }
 
-.media{
+.media {
     display: flex;
     font-size: 3em;
     padding: 2em 2em 0em 2em;
     gap: 2em;
     flex-direction: column;
     align-items: center;
-    
+
 }
-i{
+
+i {
     color: var(--color-purple);
     transition: scale .3s;
 }
-i:hover{
+
+i:hover {
     scale: 1.2;
 }
 
@@ -205,13 +207,15 @@ i:hover{
     .projetos p {
         font-size: 1.3em;
     }
-    .contato{
+
+    .contato {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    .media{
+
+    .media {
         flex-direction: row;
         gap: 1em;
 
@@ -245,39 +249,47 @@ i:hover{
 }
 
 @media (min-width: 1024px) {
-    h1{
+    h1 {
         font-size: 4em;
     }
-    ul{
+
+    ul {
         font-size: 2em;
     }
-    .hero img{
+
+    .hero img {
         width: 40%;
     }
-    .container-abtme img{
+
+    .container-abtme img {
         width: 45%;
     }
-    .container-projetos img{
+
+    .container-projetos img {
         width: 35%;
     }
-    .projetos p{
+
+    .projetos p {
         font-size: 2em;
-    } 
-    .media{
+    }
+
+    .media {
         font-size: 6em;
     }
 
 }
 
 @media (min-width: 1200px) {
-    nav{
+    nav {
         padding: 2em 5em;
     }
-    .hero{
+
+    .hero {
         flex-direction: row;
         padding: 4em;
     }
-    .container-abtme{
+
+    .container-abtme {
         background-color: var(--color-dark);
         border-radius: 50px;
         flex-direction: row;
@@ -285,14 +297,47 @@ i:hover{
         height: fit-content;
         margin: 10em auto;
     }
-    .container-abtme img{
+
+    .container-abtme img {
         border-radius: 50%;
     }
-    .container-projetos img{
+
+    .container-projetos img {
         width: 20%;
     }
-    .contato h3{
+
+    .contato h3 {
         font-size: 4em;
     }
 
+
+}
+@media (orientation: landscape){
+    .hero{
+        flex-direction: row;
+        gap: 2em;
+    }
+    .hero img{
+        width: 30%;
+    }
+    .texto-hero{
+        font-size: .7em;
+    }
+    .container-abtme{
+        flex-direction: row;
+
+    }
+    .container-abtme img{
+        width: 30%;
+    }
+    .container-abtme p{
+        font-size: 0.9em;
+    }
+    .container-projetos{
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .container-projetos img{
+        width: 25%;
+    }
 }
