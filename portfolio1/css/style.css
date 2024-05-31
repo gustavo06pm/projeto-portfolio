@@ -19,7 +19,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 }
 
 html::-webkit-scrollbar {
@@ -28,7 +28,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-    background: var(--color-darkest);
+    background-color: var(--color-darkest);
 }
 
 html::-webkit-scrollbar-thumb {
